@@ -9,7 +9,7 @@ import { UsersController } from './users/users.controller';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'host.docker.internal', // For Docker, change based on setup
+      host: 'localhost', // For Docker, change based on setup
       port: 5432,                  // Default PostgreSQL port
       username: 'root',            // Username for DB
       password: 'pass',            // Password for DB
